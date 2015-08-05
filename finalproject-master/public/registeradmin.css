@@ -1,0 +1,86 @@
+body{
+  background-color: #53dcff;
+  color: #00034b;
+  font-family: kgsummersunshine;
+  text-align: center;
+}
+
+h1{
+  color: #00034b;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+a{
+  color: #00034b;
+text-decoration: none;
+}
+
+a:hover{
+  color: red;
+  cursor: pointer;
+}
+
+#pass{
+  margin-bottom: 8.5px;
+}
+
+#bot{
+  margin-top: 15px;
+  width: 135px;
+
+  background: #3e9cbf; /*the colour of the button*/
+  padding: 8px 14px 10px; /*apply some padding inside the button*/
+  border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
+  cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+  /*style the text*/
+  font-size:1.5em;
+  font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+  letter-spacing:.1em;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+  color: #ffffff;
+  /*use box-shadow to give the button some depth - see cssdemos.tupence.co.uk/box-shadow.htm#demo7 for more info on this technique*/
+  -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+  /*give the corners a small curve*/
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#bot:hover{
+  cursor: pointer;
+  color:#ffffff;
+  /*reduce the size of the shadow to give a pushed effect*/
+  -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+  box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}
+
+
+#box{
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
+  background-color: #d1cece;
+  width: 350px;
+  height: 210px;
+  padding: 2px;
+
+  border-radius: 10px;
+
+}
+
+.cool{
+
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+
+.cool:focus{
+  outline:none;
+  border-bottom: solid 2px #575757;
+}

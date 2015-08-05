@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>createuser</title>
+  <link rel="stylesheet" type="text/css" href="createuser.css">
+
+</head>
+<body>
+  <h1>Columbia Prep Student Store</h1>
+  <div id="box">
+
+    <h3>Register Student</h3>
+    <form id="user-signup" method="post" action="/newuser">
+      <input id="1" class="cool" type="text" name="name" placeholder="name"><br>
+      <input id="2" class="cool" type="text" name="email" placeholder="email"><br>
+      Deposit:  <input id="3" class="cool" type="number" name="deposit" placeholder="$" min="0" max="50"><br>
+      Grade:<select id="4" name="grade"><br>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select><br>
+      Emails: <input id="5" type="checkbox" name="autoemails"><br>
+      <div id="example"></div>
+      <div id="gallery"></div>
+      <input id="bot" type="submit" value="Create">
+
+    </form>
+  </div>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="videoboth.js"></script>
+<script>
+$('#example').photobooth().on("image",function( event, dataUrl ){
+  $( "#gallery" ).append( '<img src="' + dataUrl + '" >');
+
+  $('#user-signup').submit(function(){
+    $.ajax({
+      type: "POST",
+      url: "/newuser",
+      data: {img: dataUrl}
+
+    });
+
+  });
+});
+
+
+
+</script>
+</body>
+</html>
